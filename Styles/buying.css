@@ -1,0 +1,253 @@
+/* LAYOUT */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, Roboto;
+}
+
+/* FLEXBOX */
+
+.flex-row-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.flex-1{
+    flex: 1;
+    margin: auto;
+}
+
+.flex-2 {
+    flex: 2;
+    margin: auto;
+}
+
+/* FONTS */
+
+.ubuntu {
+    font-family: "Ubuntu";
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+/* PADDINGS */
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
+.padding-section{
+    padding: 40px 0px;
+}
+
+.padding-general {
+    padding: 40px 80px;
+}
+
+
+/* BUYING PARTS */
+
+.button-container {
+  display: flex; /* ALIGN BUTTON CONTAINER */
+  justify-content: center; 
+}
+
+.bikes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* PREVENT OVERFLOW TO NEXT COLUMN */
+}
+
+.bike-card {
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+  
+/* -----MEDIA QUERIES----- */ 
+
+
+/* SMARTPHONE */
+@media screen and (max-width: 480px) {
+    body {
+      font-size: 14px; 
+    }
+  
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    #nav-li {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-button {
+        margin-top: 10px; /* Add spacing for button */
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 4px;
+    }
+  
+    h2 {
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
+
+    .flex-row-top {
+      flex-direction: column; 
+      gap: 10px;
+    }
+  
+    .bikes-grid {
+      gap: 20px;
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .bike-card {
+      width: 90%; 
+      padding-bottom: 20px;
+    }
+
+    .footer-container {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      padding: 10px 20px;
+    }
+  }
+  
+  /* TABLET */
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-li {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-button {
+        margin-top: 10px;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 8px;
+    }
+  
+    h2 {
+      font-size: 28px;
+      letter-spacing: 6px;
+    }
+  
+    .flex-row-top {
+      flex-direction: column; 
+      gap: 40px;
+    }
+  
+    .bikes-grid {
+      gap: 30px;
+      justify-content: space-around;
+    }
+  
+    .bike-card {
+      width: 48%; 
+    }
+  
+  
+    .footer-container {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%; 
+      text-align: center;
+    }
+  }
+  
+  /* LAPTOP */
+  @media screen and (max-width: 1279px) and (min-width: 769px) {
+    body {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 60px;
+      line-height: 72px;
+      letter-spacing: 12px;
+    }
+  
+    h2 {
+      font-size: 32px;
+      letter-spacing: 8px;
+    }
+  
+    .bikes-grid {
+      gap: 30px;
+    }
+  
+    .bike-card {
+      width: 30%; 
+    }
+  
+  
+  }
+  
+
+  
+  /* EXTRA-LARGE */
+  @media screen and (min-width: 1441px) {
+    body {
+      font-size: 22px;
+    }
+  
+    h1 {
+      font-size: 82px;
+      line-height: 108px;
+      letter-spacing: 18.4px;
+    }
+  
+    h2 {
+      font-size: 40px;
+      letter-spacing: 12px;
+    }
+  
+    .bikes-grid {
+      gap: 50px;
+    }
+  
+ 
+  }
+
+  
